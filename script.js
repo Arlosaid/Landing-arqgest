@@ -331,14 +331,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const heroImage = document.querySelector('.hero-image');
-        
-        if (heroImage && scrolled < window.innerHeight) {
-            heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
-        }
-    });
+    // Efecto parallax solo en desktop
+    const isMobileDevice = window.innerWidth <= 768;
+    
+    if (!isMobileDevice) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('.hero-image');
+            
+            if (heroImage && scrolled < window.innerHeight) {
+                heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+    }
     
     function animateValue(element, start, end, duration, suffix = '') {
         let startTimestamp = null;
