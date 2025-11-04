@@ -1,0 +1,22 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+*~
+
+# Node modules (si usas alguna herramienta de build)
+node_modules/
+
+# Archivos de prueba/desarrollo
+test-seguridad.html

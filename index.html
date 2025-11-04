@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArqGest - Gestión Inteligente de Proyectos Arquitectónicos</title>
+    <meta name="description" content="Sistema completo de gestión para estudios de arquitectura. Controla proyectos, finanzas, presupuestos y equipos desde una plataforma profesional.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arqgest.com">
+    <meta property="og:title" content="ArqGest - Gestión Inteligente de Proyectos Arquitectónicos">
+    <meta property="og:description" content="Sistema completo de gestión para estudios de arquitectura. Controla proyectos, finanzas, presupuestos y equipos desde una plataforma profesional.">
+    <meta property="og:image" content="https://arqgest.com/assets/images/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://arqgest.com">
+    <meta property="twitter:title" content="ArqGest - Gestión Inteligente de Proyectos Arquitectónicos">
+    <meta property="twitter:description" content="Sistema completo de gestión para estudios de arquitectura. Controla proyectos, finanzas, presupuestos y equipos desde una plataforma profesional.">
+    <meta property="twitter:image" content="https://arqgest.com/assets/images/og-image.jpg">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfYourSiteKeyHere" async defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo-container" id="logoLink">
+                <img src="assets/images/logo.svg" alt="ArqGest" class="logo-image">
+                <span class="logo-text">ArqGest</span>
+            </a>
+            <nav class="nav">
+                <a href="#caracteristicas" class="nav-link">Características</a>
+                <a href="#kanban" class="nav-link">Kanban</a>
+                <a href="#finanzas" class="nav-link">Finanzas</a>
+                <a href="#precios" class="nav-link">Precios</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="#contacto" class="btn-primary-small">Prueba Gratis</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Gestiona tus proyectos arquitectónicos sin complicaciones
+                    </h1>
+                    <p class="hero-subtitle">
+                        La plataforma todo-en-uno que organiza tus proyectos, finanzas y equipo automáticamente. Diseñada específicamente para arquitectos. Sin límites de proyectos.
+                    </p>
+                    
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>Proyectos ilimitados por solo $299 MXN/mes</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>Precio de lanzamiento especial - Ahorra $100 pesos</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>30 días GRATIS - Sin tarjeta - Cancela cuando quieras</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#contacto" class="btn btn-primary">Comenzar Prueba Gratis</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Gratis 30 días</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5min</span>
+                            <span class="stat-label">Configuración</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Proyectos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="assets/screenshots/dashboard.png" alt="ArqGest Dashboard" class="dashboard-preview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kanban" class="kanban-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tablero Kanban Visual</h2>
+                <p class="section-subtitle">
+                    Visualiza el progreso de todos tus proyectos en tiempo real. Arrastra tareas entre columnas y mantén a tu equipo sincronizado.
+                </p>
+            </div>
+
+            <div class="kanban-board">
+                <div class="kanban-column">
+                    <div class="column-header">
+                        <h3 class="column-title">Por Hacer</h3>
+                        <span class="column-count">3</span>
+                    </div>
+                    <div class="kanban-cards">
+                        <div class="kanban-card">
+                            <span class="card-priority high">Alta</span>
+                            <h4 class="card-title">Proyecto Residencial Santa Fe</h4>
+                            <p class="card-description">Diseño arquitectónico inicial</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">JM</span>
+                                </div>
+                                <span class="card-tasks">5 tareas</span>
+                            </div>
+                        </div>
+                        <div class="kanban-card">
+                            <span class="card-priority medium">Media</span>
+                            <h4 class="card-title">Edificio Corporativo Polanco</h4>
+                            <p class="card-description">Revisión de planos estructurales</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">AL</span>
+                                    <span class="avatar">MC</span>
+                                </div>
+                                <span class="card-tasks">8 tareas</span>
+                            </div>
+                        </div>
+                        <div class="kanban-card">
+                            <span class="card-priority low">Baja</span>
+                            <h4 class="card-title">Remodelación Oficinas CDMX</h4>
+                            <p class="card-description">Propuesta de distribución</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">RH</span>
+                                </div>
+                                <span class="card-tasks">3 tareas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanban-column">
+                    <div class="column-header">
+                        <h3 class="column-title">En Progreso</h3>
+                        <span class="column-count">3</span>
+                    </div>
+                    <div class="kanban-cards">
+                        <div class="kanban-card">
+                            <span class="card-priority high">Alta</span>
+                            <h4 class="card-title">Casa Habitación Coyoacán</h4>
+                            <p class="card-description">Desarrollo de planos ejecutivos</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">LG</span>
+                                    <span class="avatar">PM</span>
+                                </div>
+                                <span class="card-tasks">12 tareas</span>
+                            </div>
+                        </div>
+                        <div class="kanban-card">
+                            <span class="card-priority high">Alta</span>
+                            <h4 class="card-title">Plaza Comercial Querétaro</h4>
+                            <p class="card-description">Renders 3D y visualizaciones</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">DT</span>
+                                </div>
+                                <span class="card-tasks">6 tareas</span>
+                            </div>
+                        </div>
+                        <div class="kanban-card">
+                            <span class="card-priority medium">Media</span>
+                            <h4 class="card-title">Restaurante Condesa</h4>
+                            <p class="card-description">Diseño de interiores</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">SK</span>
+                                    <span class="avatar">NB</span>
+                                </div>
+                                <span class="card-tasks">9 tareas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanban-column">
+                    <div class="column-header">
+                        <h3 class="column-title">Revisión</h3>
+                        <span class="column-count">3</span>
+                    </div>
+                    <div class="kanban-cards">
+                        <div class="kanban-card">
+                            <span class="card-priority medium">Media</span>
+                            <h4 class="card-title">Hotel Boutique Guadalajara</h4>
+                            <p class="card-description">Validación de instalaciones</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">FC</span>
+                                    <span class="avatar">MR</span>
+                                </div>
+                                <span class="card-tasks">4 tareas</span>
+                            </div>
+                        </div>
+                        <div class="kanban-card">
+                            <span class="card-priority low">Baja</span>
+                            <h4 class="card-title">Departamentos Interlomas</h4>
+                            <p class="card-description">Revisión de acabados</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">VL</span>
+                                </div>
+                                <span class="card-tasks">7 tareas</span>
+                            </div>
+                        </div>
+                        <div class="kanban-card">
+                            <span class="card-priority low">Baja</span>
+                            <h4 class="card-title">Consultorio Médico</h4>
+                            <p class="card-description">Aprobación de cliente</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">GB</span>
+                                </div>
+                                <span class="card-tasks">2 tareas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanban-column">
+                    <div class="column-header">
+                        <h3 class="column-title">Completado</h3>
+                        <span class="column-count">2</span>
+                    </div>
+                    <div class="kanban-cards">
+                        <div class="kanban-card completed">
+                            <span class="card-priority low">Baja</span>
+                            <h4 class="card-title">Showroom Roma Norte</h4>
+                            <p class="card-description">Entrega final y facturación</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">JM</span>
+                                    <span class="avatar">AL</span>
+                                </div>
+                                <span class="card-tasks">✓ Completado</span>
+                            </div>
+                        </div>
+                        <div class="kanban-card completed">
+                            <span class="card-priority low">Baja</span>
+                            <h4 class="card-title">Cafetería San Ángel</h4>
+                            <p class="card-description">Proyecto entregado</p>
+                            <div class="card-meta">
+                                <div class="card-avatars">
+                                    <span class="avatar">RH</span>
+                                </div>
+                                <span class="card-tasks">✓ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanban-features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Drag & Drop</h3>
+                    <p class="feature-description">Mueve tareas entre columnas fácilmente</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Colaboración</h3>
+                    <p class="feature-description">Asigna tareas a miembros del equipo</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Tiempo Real</h3>
+                    <p class="feature-description">Cambios sincronizados instantáneamente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="finanzas" class="finanzas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Controla tus finanzas sin complicaciones</h2>
+                <p class="section-subtitle">
+                    Olvídate de hojas de cálculo confusas. Visualiza el estado financiero de todos tus proyectos en tiempo real desde un dashboard centralizado y profesional.
+                </p>
+            </div>
+
+            <div class="finanzas-grid">
+                <div class="finanzas-card">
+                    <div class="finanzas-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+                            <path d="M12 18V6"/>
+                        </svg>
+                    </div>
+                    <h3 class="finanzas-title">Presupuestos y Cobros Organizados</h3>
+                    <p class="finanzas-description">
+                        Define presupuestos y registra cada pago con comprobantes adjuntos. Nunca más pierdas el rastro de quién te debe o qué has cobrado.
+                    </p>
+                    <ul class="finanzas-list">
+                        <li>Presupuesto total por proyecto visible al instante</li>
+                        <li>Registra cada pago con fecha, monto y descripción</li>
+                        <li>Adjunta facturas y comprobantes en PDF</li>
+                        <li>Edita o elimina registros cuando lo necesites</li>
+                    </ul>
+                </div>
+
+                <div class="finanzas-card">
+                    <div class="finanzas-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3 class="finanzas-title">Vista Global de Tu Estudio</h3>
+                    <p class="finanzas-description">
+                        Identifica al instante qué proyectos están al día y cuáles necesitan seguimiento. Todo el panorama financiero de tu estudio en una sola pantalla.
+                    </p>
+                    <ul class="finanzas-list">
+                        <li>Vista consolidada de todos tus proyectos activos</li>
+                        <li>Total facturado vs total cobrado en tiempo real</li>
+                        <li>Barras de progreso visual por cada proyecto</li>
+                        <li>Filtros inteligentes por estado de cobranza</li>
+                    </ul>
+                </div>
+
+                <div class="finanzas-card">
+                    <div class="finanzas-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="20" x2="12" y2="10"/>
+                            <line x1="18" y1="20" x2="18" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="16"/>
+                        </svg>
+                    </div>
+                    <h3 class="finanzas-title">Rentabilidad en Automático</h3>
+                    <p class="finanzas-description">
+                        Sin fórmulas ni cálculos manuales. El sistema calcula automáticamente cuánto llevas cobrado, cuánto falta y qué porcentaje de avance tienes.
+                    </p>
+                    <ul class="finanzas-list">
+                        <li>Porcentaje cobrado vs presupuesto calculado al instante</li>
+                        <li>Monto pendiente por cobrar siempre visible</li>
+                        <li>Estados visuales: sin pagos, en proceso, completado</li>
+                        <li>Fecha y monto del último pago recibido</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="finanzas-cta">
+                <h3>¿Listo para tener el control de tus finanzas?</h3>
+                <p>Comienza tu prueba gratuita de 30 días. Sin tarjeta de crédito, sin compromisos.</p>
+                <a href="#contacto" class="btn btn-primary">Comenzar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Todo lo que necesitas en una sola plataforma</h2>
+                <p class="section-subtitle">
+                    Deja de usar 5 apps diferentes. ArqGest centraliza clientes, proyectos, archivos y finanzas en un solo lugar diseñado para arquitectos.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Base de Datos de Clientes</h3>
+                    <p class="feature-card-description">
+                        Olvídate de buscar en WhatsApp o correos viejos. Toda la información de tus clientes, su historial de proyectos y documentos en un solo lugar siempre accesible.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Organiza por Fases de Proyecto</h3>
+                    <p class="feature-card-description">
+                        Estructura tus proyectos como trabajas: Anteproyecto, Proyecto Ejecutivo, Construcción, Entrega. Personaliza las fases según tu metodología de trabajo.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+                            <polyline points="13 2 13 9 20 9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Gestión de Archivos Centralizada</h3>
+                    <p class="feature-card-description">
+                        Sube y organiza todos tus archivos de proyecto: planos de AutoCAD, modelos de Revit, renders y documentos. Todo accesible desde cualquier lugar.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Vista General de Todo</h3>
+                    <p class="feature-card-description">
+                        Ve el estado de todos tus proyectos de un vistazo. Qué está atrasado, qué necesita atención, cuánto has cobrado. Todo actualizado en tiempo real.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Colaboración en Equipo</h3>
+                    <p class="feature-card-description">
+                        Invita a tu equipo sin costo extra. Asigna tareas, comparte archivos y mantén a todos sincronizados. Usuarios ilimitados en el plan profesional.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <path d="M9 11l3 3L22 4"/>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Tablero Kanban Visual</h3>
+                    <p class="feature-card-description">
+                        Organiza tareas con tableros Kanban arrastrando tarjetas entre columnas. Visualiza el flujo de trabajo y el progreso de cada proyecto al instante.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Un precio justo, sin sorpresas</h2>
+                <p class="section-subtitle">
+                    Prueba gratis por 30 días. Si te convence, continúa por menos de $10 pesos al día. Cancela cuando quieras sin explicaciones.
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Prueba Gratuita</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">0</span>
+                            <span class="price-period">/30 días</span>
+                        </div>
+                        <p class="pricing-description">Prueba todas las funciones sin límites</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-included">Acceso completo a la plataforma</li>
+                        <li class="feature-included">Hasta 2 usuarios</li>
+                        <li class="feature-included">5GB de almacenamiento</li>
+                        <li class="feature-included">Proyectos ilimitados durante el trial</li>
+                        <li class="feature-highlight">Sin tarjeta de crédito</li>
+                        <li class="feature-highlight">Sin compromisos</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline-full">Solicitar Información</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Más Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Profesional</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">199</span>
+                            <span class="price-period">/mes</span>
+                        </div>
+                        <p class="pricing-description">Para estudios que quieren crecer</p>
+                        <div class="pricing-founder">
+                            <strong>Precio de Lanzamiento</strong>
+                            <span>Precio regular: $299/mes - Ahorra $100</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-included">Proyectos ilimitados</li>
+                        <li class="feature-included">Hasta 5 usuarios en tu equipo</li>
+                        <li class="feature-included">25GB de almacenamiento</li>
+                        <li class="feature-included">Gestión completa de clientes</li>
+                        <li class="feature-included">Tableros Kanban para organizar tareas</li>
+                        <li class="feature-included">Control de presupuestos y pagos</li>
+                        <li class="feature-included">Registro de cobros por proyecto</li>
+                        <li class="feature-included">Fases personalizables de proyecto</li>
+                        <li class="feature-included">Gestión de archivos y documentos</li>
+                        <li class="feature-included">Soporte prioritario por email</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary-full">Comenzar Prueba de 30 Días</a>
+                    <p class="pricing-note">Precios en MXN + IVA • Pago mensual por transferencia</p>
+                </div>
+            </div>
+
+            <div class="pricing-guarantee">
+                <p>No se requiere tarjeta de crédito para la prueba gratuita</p>
+                <p>Pago fácil por transferencia bancaria al finalizar el trial</p>
+                <p>Cancela en cualquier momento sin penalización</p>
+                <p>Exporta todos tus datos antes de cancelar</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trial" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prueba ArqGest gratis por 30 días</h2>
+                <p class="cta-subtitle">
+                    Organiza tus proyectos, clientes y finanzas en una sola plataforma. Comienza hoy sin tarjeta de crédito y descubre una mejor forma de gestionar tu estudio.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contacto" class="btn btn-cta-primary">Comenzar Ahora Gratis</a>
+                    <a href="#contacto" class="btn btn-cta-secondary">Contactar</a>
+                </div>
+                <p class="cta-note">Acceso inmediato • Sin tarjeta • Cancela cuando quieras</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="contact-title">Contáctanos</h2>
+                    <p class="contact-subtitle">
+                        Completa el formulario y te responderemos a la brevedad con toda la información que necesites sobre ArqGest.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>Respuesta en menos de 24 horas</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Sin compromiso</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                            <span>Tus datos protegidos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/adroal08@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nuevo contacto desde ArqGest">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://arqgest.com/gracias.html">
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                    <input type="hidden" name="_formtime" id="formTime">
+                    <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse">
+                    
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studio">Estudio o Empresa</label>
+                        <input type="text" id="studio" name="studio" placeholder="Opcional">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Motivo de contacto</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Contratar plan mensual">Contratar plan mensual</option>
+                            <option value="Iniciar prueba gratuita">Iniciar prueba gratuita de 30 días</option>
+                            <option value="Solicitar información">Solicitar más información</option>
+                            <option value="Consulta técnica">Consulta técnica</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Opcional: cuéntanos más sobre tu consulta"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary-full">Enviar</button>
+                    <p class="form-note">Te responderemos por email en menos de 24 horas</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="ArqGest" class="footer-logo-image">
+                    </div>
+                    <p class="footer-description">
+                        Plataforma de gestión de proyectos diseñada para arquitectos.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/arqgest" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/arqgest" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/arqgest" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Producto</h4>
+                    <ul class="footer-links">
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#kanban">Kanban</a></li>
+                        <li><a href="#finanzas">Finanzas</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="terminos.html">Términos de Servicio</a></li>
+                        <li><a href="privacidad.html">Aviso de Privacidad</a></li>
+                        <li><a href="cookies.html">Política de Cookies</a></li>
+                    </ul>
+                    <h4 class="footer-title" style="margin-top: 1.5rem;">Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hola@arqgest.com">hola@arqgest.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 ArqGest. Todos los derechos reservados.
+                </p>
+                <p class="footer-made">
+                    Hecho con ❤️ para arquitectos
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
