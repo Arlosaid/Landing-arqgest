@@ -21,6 +21,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 1rem;
+        }
+        .legal-nav .btn-primary-small {
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+        @media (max-width: 768px) {
+            .legal-nav {
+                padding: 0.75rem 1rem;
+            }
+            .legal-nav .logo span {
+                display: none;
+            }
+            .legal-nav .btn-primary-small {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+            }
         }
         .legal-nav .logo {
             display: flex;
@@ -109,6 +127,40 @@
         }
         .back-link:hover {
             text-decoration: underline;
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+        }
+        .scroll-to-top svg {
+            width: 24px;
+            height: 24px;
+            color: white;
         }
     </style>
 </head>
@@ -338,5 +390,13 @@
             <p><strong>Email alternativo:</strong> hola@arqgest.com</p>
         </div>
     </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
