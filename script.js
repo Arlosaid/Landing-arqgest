@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const RECAPTCHA_SITE_KEY = '6LfYourSiteKeyHere';
+    const RECAPTCHA_SITE_KEY = '6LcRGRosAAAAAInfsA3ShegwzWLOrTAmsl6zSapc';
     const MIN_FORM_FILL_TIME = 3000;
     const MAX_SUBMISSIONS_PER_SESSION = 3;
     const COOLDOWN_PERIOD = 60000;
