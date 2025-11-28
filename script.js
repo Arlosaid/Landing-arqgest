@@ -21,6 +21,29 @@ document.addEventListener('DOMContentLoaded', function() {
             honeypot.setAttribute('tabindex', '-1');
         }
         
+        // Hacer el campo mensaje requerido cuando se selecciona "Otro"
+        const interestSelect = document.getElementById('interest');
+        const messageField = document.getElementById('message');
+        const messageLabel = messageField ? messageField.previousElementSibling : null;
+        
+        if (interestSelect && messageField) {
+            interestSelect.addEventListener('change', function() {
+                if (this.value === 'Otro') {
+                    messageField.setAttribute('required', 'required');
+                    if (messageLabel) {
+                        messageLabel.innerHTML = 'Mensaje <span style="color: red;">*</span>';
+                    }
+                    messageField.placeholder = 'Por favor, describe tu consulta';
+                } else {
+                    messageField.removeAttribute('required');
+                    if (messageLabel) {
+                        messageLabel.innerHTML = 'Mensaje';
+                    }
+                    messageField.placeholder = 'Opcional: cuéntanos más sobre tu consulta';
+                }
+            });
+        }
+        
         contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
@@ -78,6 +101,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
+            // Actualizar el asunto del correo con el motivo de contacto
+            const interestValue = document.getElementById('interest').value;
+            const subjectInput = document.getElementById('_subject');
+            if (subjectInput && interestValue) {
+                subjectInput.value = `ArqGest - ${interestValue}`;
+            }
+            
             this.submit();
         });
     }
@@ -125,6 +155,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         const message = document.getElementById('message').value.trim();
+        
+        // Si el motivo es "Otro", el mensaje es obligatorio
+        if (interest === 'Otro' && message.length === 0) {
+            showFormError('Por favor, describe tu consulta en el mensaje cuando seleccionas "Otro".');
+            return false;
+        }
+        
         if (message.length > 1000) {
             showFormError('El mensaje es demasiado largo (máximo 1000 caracteres).');
             return false;
