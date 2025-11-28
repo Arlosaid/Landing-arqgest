@@ -28,6 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (interestSelect && messageField) {
             interestSelect.addEventListener('change', function() {
+                // Actualizar el asunto del correo cuando cambia el motivo de contacto
+                const subjectInput = document.getElementById('_subject');
+                if (subjectInput && this.value) {
+                    subjectInput.value = `ArqGest - ${this.value}`;
+                }
+                
                 if (this.value === 'Otro') {
                     messageField.setAttribute('required', 'required');
                     if (messageLabel) {
@@ -101,13 +107,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
-            // Actualizar el asunto del correo con el motivo de contacto
+            // Actualizar el asunto del correo con el motivo de contacto (respaldo antes del envío)
             const interestValue = document.getElementById('interest').value;
             const subjectInput = document.getElementById('_subject');
-            if (subjectInput && interestValue) {
-                subjectInput.value = `ArqGest - ${interestValue}`;
+            if (subjectInput) {
+                if (interestValue) {
+                    subjectInput.value = `ArqGest - ${interestValue}`;
+                } else {
+                    // Fallback si por alguna razón no hay valor seleccionado
+                    subjectInput.value = 'Nuevo contacto desde ArqGest';
+                }
             }
             
+            // Actualizar _next con la URL completa para que funcione correctamente
+            const nextInput = this.querySelector('input[name="_next"]');
+            if (nextInput) {
+                // Si es una URL relativa, convertirla a absoluta
+                if (nextInput.value.startsWith('/') || !nextInput.value.startsWith('http')) {
+                    const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
+                    nextInput.value = baseUrl + 'gracias.html';
+                }
+            }
+            
+            // Enviar el formulario (FormSubmit redirigirá automáticamente a _next)
             this.submit();
         });
     }
@@ -115,16 +137,28 @@ document.addEventListener('DOMContentLoaded', function() {
     function executeRecaptcha() {
         return new Promise((resolve, reject) => {
             if (typeof grecaptcha === 'undefined') {
-                console.warn('reCAPTCHA no disponible');
+                // reCAPTCHA no está disponible, continuar sin él
                 resolve('no-recaptcha');
                 return;
             }
             
-            grecaptcha.ready(function() {
-                grecaptcha.execute(RECAPTCHA_SITE_KEY, {action: 'submit'})
-                    .then(resolve)
-                    .catch(reject);
-            });
+            try {
+                grecaptcha.ready(function() {
+                    grecaptcha.execute(RECAPTCHA_SITE_KEY, {action: 'submit'})
+                        .then(function(token) {
+                            resolve(token);
+                        })
+                        .catch(function(error) {
+                            // Si hay error con reCAPTCHA, continuar sin él
+                            console.warn('reCAPTCHA error (continuando sin él):', error);
+                            resolve('no-recaptcha');
+                        });
+                });
+            } catch (error) {
+                // Si hay error al ejecutar reCAPTCHA, continuar sin él
+                console.warn('reCAPTCHA no disponible (continuando sin él)');
+                resolve('no-recaptcha');
+            }
         });
     }
     

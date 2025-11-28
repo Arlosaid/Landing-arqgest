@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333333; background-color: #f5f5f5; margin: 0; padding: 0;">
+    <table role="presentation" style="width: 100%; border-collapse: collapse; background-color: #f5f5f5; padding: 15px;">
+        <tr>
+            <td align="center" style="padding: 15px 0;">
+                <table role="presentation" style="max-width: 500px; width: 100%; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden;">
+                    <!-- Logo Header -->
+                    <tr>
+                        <td style="background-color: #ffffff; padding: 15px; text-align: center; border-bottom: 1px solid #f1f5f9;">
+                            <img src="https://arqgest.com/assets/images/logo.png" alt="ArqGest" style="height: 35px; display: block; margin: 0 auto;">
+                        </td>
+                    </tr>
+                    
+                    <!-- Title Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); padding: 20px 15px; text-align: center;">
+                            <h1 style="color: #ffffff; margin: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.5px;">
+                                Nuevo Contacto Recibido
+                            </h1>
+                        </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 20px;">
+                            <!-- Info Box -->
+                            <table role="presentation" style="width: 100%; border-collapse: collapse; background-color: #f8fafc; border-radius: 6px; overflow: hidden;">
+                                <tr>
+                                    <td style="padding: 12px 15px; border-bottom: 1px solid #e2e8f0;">
+                                        <strong style="color: #475569; font-size: 12px; display: block; text-transform: uppercase;">Nombre</strong>
+                                        <span style="color: #1e293b; font-size: 14px; font-weight: 600; display: block; margin-top: 2px;">{name}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 12px 15px; border-bottom: 1px solid #e2e8f0;">
+                                        <strong style="color: #475569; font-size: 12px; display: block; text-transform: uppercase;">Email</strong>
+                                        <a href="mailto:{email}" style="color: #3b82f6; text-decoration: none; font-size: 14px; font-weight: 500; display: block; margin-top: 2px;">{email}</a>
+                                    </td>
+                                </tr>
+                                {studio}
+                                <tr>
+                                    <td style="padding: 12px 15px; border-bottom: 1px solid #e2e8f0;">
+                                        <strong style="color: #475569; font-size: 12px; display: block; text-transform: uppercase;">Motivo</strong>
+                                        <span style="color: #1e293b; font-size: 13px; font-weight: 600; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-top: 4px;">{interest}</span>
+                                    </td>
+                                </tr>
+                                {message}
+                            </table>
+                            
+                            <!-- Action Box -->
+                            <div style="margin-top: 20px; text-align: center;">
+                                <a href="mailto:{email}" style="background-color: #3b82f6; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 6px; display: inline-block;">Responder a {name}</a>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 15px; text-align: center; background-color: #f8fafc; border-top: 1px solid #e2e8f0;">
+                            <p style="margin: 0; color: #94a3b8; font-size: 11px;">
+                                © 2025 ArqGest | <a href="https://arqgest.com" style="color: #64748b; text-decoration: none;">arqgest.com</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

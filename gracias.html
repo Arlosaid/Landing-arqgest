@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensaje Recibido - ArqGest</title>
+    <title>¡Mensaje Enviado! - ArqGest</title>
     <meta name="description" content="Gracias por tu interés en ArqGest. Te contactaremos pronto.">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
@@ -16,84 +16,188 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%);
+            background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #f0fdf4 100%);
             padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gracias-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-2%, 2%) rotate(1deg); }
         }
 
         .gracias-content {
-            max-width: 600px;
+            max-width: 480px;
             text-align: center;
             background: white;
-            padding: 4rem 3rem;
+            padding: 2.5rem 2rem;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 10px 20px rgba(59, 130, 246, 0.05);
+            position: relative;
+            z-index: 1;
+        }
+
+        .gracias-logo {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .gracias-logo img {
+            height: 40px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         .gracias-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 2rem;
-            background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.25rem;
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            animation: scaleIn 0.5s ease;
-        }
-
-        @keyframes scaleIn {
-            0% { transform: scale(0); opacity: 0; }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); opacity: 1; }
+            animation: scaleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.25);
         }
 
         .gracias-icon svg {
-            width: 48px;
-            height: 48px;
+            width: 35px;
+            height: 35px;
             stroke: white;
-            stroke-width: 3;
+            stroke-width: 2.5;
+            animation: checkDraw 0.8s ease 0.3s both;
         }
 
         .gracias-title {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             font-weight: 800;
-            color: var(--dark);
-            margin-bottom: 1rem;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
         }
 
         .gracias-subtitle {
-            font-size: 1.2rem;
-            color: var(--gray);
-            margin-bottom: 2rem;
+            font-size: 1rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
             line-height: 1.6;
         }
 
+        .gracias-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-item {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 1rem 0.75rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .feature-icon {
+            margin-bottom: 0.5rem;
+            color: #3b82f6;
+        }
+        
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .feature-text {
+            font-size: 0.8rem;
+            color: #475569;
+            font-weight: 600;
+        }
+
         .gracias-message {
-            background: #f0f9ff;
-            border-left: 4px solid var(--primary);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-left: 3px solid #3b82f6;
+            padding: 1rem 1.25rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
             text-align: left;
         }
 
         .gracias-message p {
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
+            color: #0c4a6e;
+            margin: 0;
+            line-height: 1.5;
+            font-size: 0.9rem;
         }
 
         .gracias-actions {
             display: flex;
             gap: 1rem;
             justify-content: center;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .gracias-actions .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .gracias-slogan {
             margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .gracias-slogan p {
+            color: #94a3b8;
+            font-size: 0.75rem;
+            font-style: italic;
+            margin: 0;
+        }
+
+        @media (max-width: 480px) {
+            .gracias-content {
+                padding: 2.5rem 1.5rem;
+            }
+            
+            .gracias-title {
+                font-size: 1.8rem;
+            }
+            
+            .gracias-features {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <section class="gracias-section">
         <div class="gracias-content">
+            <div class="gracias-logo">
+                <img src="assets/images/logo.png" alt="ArqGest">
+            </div>
+            
             <div class="gracias-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
@@ -101,18 +205,42 @@
                 </svg>
             </div>
 
-            <h1 class="gracias-title">Mensaje Recibido</h1>
+            <h1 class="gracias-title">¡Mensaje Enviado!</h1>
             <p class="gracias-subtitle">
-                Gracias por tu interés en ArqGest. Hemos recibido tu información y te contactaremos muy pronto.
+                Gracias por tu interés en ArqGest. Hemos recibido tu información correctamente.
             </p>
 
+            <div class="gracias-features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Revisa tu correo</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Respuesta en 24h</div>
+                </div>
+            </div>
+
             <div class="gracias-message">
-                <p><strong>Revisa tu correo electrónico</strong></p>
-                <p>Te responderemos en menos de 24 horas con toda la información que necesites.</p>
+                <p><strong>¿Qué sigue?</strong> Nuestro equipo revisará tu mensaje y te contactará a la brevedad con toda la información que necesites sobre ArqGest.</p>
             </div>
 
             <div class="gracias-actions">
-                <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
+                <a href="index.html" class="btn btn-primary">← Volver al Inicio</a>
+            </div>
+
+            <div class="gracias-slogan">
+                <p>"Simplifica tu arquitectura, potencia tu gestión"</p>
             </div>
         </div>
     </section>
