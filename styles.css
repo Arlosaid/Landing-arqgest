@@ -50,7 +50,7 @@ html {
     right: 0;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     z-index: 1000;
     transition: all 0.3s;
 }
@@ -361,7 +361,7 @@ html {
     padding: 0.65rem 1rem;
     border-radius: 8px;
     border-left: 3px solid var(--secondary);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
     text-align: left;
     flex: 0 1 auto;
@@ -405,7 +405,7 @@ html {
     justify-content: center;
     margin-top: 0.75rem;
     padding-top: 1.25rem;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 0.75rem auto 0;
 }
@@ -454,7 +454,7 @@ html {
     width: 100%;
     max-width: 100%;
     border-radius: 16px;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.25);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.25);
     border: 10px solid white;
     transition: none;
     display: block;
@@ -472,7 +472,7 @@ html {
         z-index: 10;
         transform: none !important;
     }
-    
+
     .hero-image {
         padding: 0;
         margin: 0 auto;
@@ -480,13 +480,13 @@ html {
         z-index: 10;
         transform: none !important;
     }
-    
+
     .hero {
         overflow: visible;
         margin-bottom: 0;
         padding-bottom: 80px;
     }
-    
+
     .kanban-section {
         margin-top: 0;
         padding-top: 80px;
@@ -494,8 +494,15 @@ html {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .section-header {
@@ -545,7 +552,7 @@ html {
 }
 
 .kanban-section .section-subtitle {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .kanban-board {
@@ -559,7 +566,7 @@ html {
 }
 
 .kanban-column {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 1.5rem;
     min-height: 400px;
@@ -573,7 +580,7 @@ html {
     justify-content: space-between;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(255,255,255,0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .column-title {
@@ -582,7 +589,7 @@ html {
 }
 
 .column-count {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
     padding: 0.2rem 0.6rem;
     border-radius: 12px;
     font-size: 0.9rem;
@@ -600,14 +607,14 @@ html {
     color: var(--dark);
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     cursor: move;
 }
 
 .kanban-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .kanban-card.completed {
@@ -708,7 +715,7 @@ html {
     width: 60px;
     height: 60px;
     margin: 0 auto 1rem;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -761,7 +768,7 @@ html {
     background: white;
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s;
     width: 100%;
     box-sizing: border-box;
@@ -830,7 +837,7 @@ html {
     border-radius: 16px;
     max-width: 800px;
     margin: 0 auto;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .finanzas-cta h3 {
@@ -937,7 +944,7 @@ html {
     background: white;
     border-radius: 20px;
     padding: 3rem;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
     transition: all 0.3s;
     border: 3px solid transparent;
     position: relative;
@@ -1097,7 +1104,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
 
 .guarantee-item {
@@ -1232,7 +1239,7 @@ html {
     padding: 1rem;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .contact-benefit svg {
@@ -1251,7 +1258,7 @@ html {
     background: white;
     padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .form-group {
@@ -1347,11 +1354,13 @@ html {
     font-size: 18px;
     font-weight: bold;
 }
+
 @keyframes slideDown {
     from {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1418,11 +1427,11 @@ button[type="submit"].loading::after {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .contact-title {
         font-size: 2rem;
     }
-    
+
     .contact-form {
         padding: 2rem;
     }
@@ -1515,7 +1524,7 @@ button[type="submit"].loading::after {
 .social-link {
     width: 36px;
     height: 36px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -1562,7 +1571,7 @@ button[type="submit"].loading::after {
 
 .footer-bottom {
     padding: 1rem 4rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1570,7 +1579,8 @@ button[type="submit"].loading::after {
     margin: 0 auto;
 }
 
-.footer-copyright, .footer-made {
+.footer-copyright,
+.footer-made {
     color: var(--gray-light);
     font-size: 0.85rem;
     margin: 0;
@@ -1660,7 +1670,7 @@ button[type="submit"].loading::after {
     .hero {
         padding: 100px 0 80px;
     }
-    
+
     .hero-layout {
         padding: 0 1.5rem;
         gap: 1.5rem;
@@ -1828,7 +1838,7 @@ button[type="submit"].loading::after {
         padding: 80px 0 60px;
         overflow: visible;
     }
-    
+
     .hero-layout {
         padding: 0 1rem;
         gap: 1.5rem;
@@ -2100,11 +2110,11 @@ button[type="submit"].loading::after {
         padding: 80px 0 60px;
         overflow: visible;
     }
-    
+
     .hero-layout {
         gap: 1.25rem;
     }
-    
+
     .hero-title {
         font-size: 1.5rem;
         line-height: 1.3;
@@ -2187,11 +2197,11 @@ button[type="submit"].loading::after {
         padding: 80px 0 60px;
         overflow: visible;
     }
-    
+
     .hero-layout {
         gap: 1.5rem;
     }
-    
+
     .hero-title {
         font-size: 2rem;
         line-height: 1.3;
@@ -2224,7 +2234,7 @@ button[type="submit"].loading::after {
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     width: 50px;
     height: 50px;
     background: var(--gradient);
@@ -2268,11 +2278,109 @@ button[type="submit"].loading::after {
         width: 45px;
         height: 45px;
         bottom: 20px;
-        right: 20px;
+        left: 20px;
     }
-    
+
     .scroll-to-top svg {
         width: 20px;
         height: 20px;
+    }
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-btn svg {
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+}
+
+/* Tooltip Styles */
+.whatsapp-btn::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.whatsapp-btn::after {
+    content: '';
+    position: absolute;
+    right: 64px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.whatsapp-btn:hover::before,
+.whatsapp-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Hide tooltip on mobile to avoid clutter */
+    .whatsapp-btn::before,
+    .whatsapp-btn::after {
+        display: none;
+    }
+}
+
+/* Adjust reCAPTCHA badge on mobile to avoid overlap with WhatsApp button */
+@media (max-width: 768px) {
+    .grecaptcha-badge {
+        bottom: 80px !important;
+        right: 20px !important;
     }
 }
