@@ -2380,7 +2380,7 @@ button[type="submit"].loading::after {
 /* Adjust reCAPTCHA badge on mobile to avoid overlap with WhatsApp button */
 @media (max-width: 768px) {
     .grecaptcha-badge {
-        bottom: 80px !important;
-        right: 20px !important;
+        display: none !important;
+        
     }
 }
